@@ -1,0 +1,118 @@
+/*FONTS<<____________________________________________________________________________________*/
+
+/* ICONS<<-------------------------------------------------- */
+/* Material */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+    src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+         url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+         url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+  }
+  [class*='icon-']:before{
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+   /* Support for all WebKit browsers. */
+   -webkit-font-smoothing: antialiased;
+   /* Support for Safari and Chrome. */
+   text-rendering: optimizeLegibility;
+   /* Support for Firefox. */
+   -moz-osx-font-smoothing: grayscale;
+   /* Support for IE. */
+   font-feature-settings: 'liga';
+  }
+  .icon-search:before{content:'\e8b6';}
+  
+ 
+  
+  /* font types */
+  .fontNorm     {   font-weight: 400;       }
+  .fontMed      {   font-weight: 500;       }
+  .fontBold     {   font-weight: 700;       }
+  /* font sizes */
+  .fSize60      {   font-size:   3.53rem    }
+  .fSize36      {   font-size:   2.12rem    }
+  .fSize20      {   font-size:   1.18rem    }
+  .fSize17      {   font-size:   1rem       }
+  .fSize16      {   font-size:   0.94rem    }
+
+  /* font positioning */
+  .TXTcenter{text-align: center;}
+  .TXTleft{text-align: left;}
+  .TXTjustif{text-align: justify;}
+  .TXTlineL{line-height: 1.88rem;}
+  /*FONTS>>___________________________________________________________________________________*/
+  
+/*COLORVALUES<<___________________________________________________________________________________*/
+:root{
+    --Col_Primary           : #FF8400;
+    --Col_PrimaryAlpha      : rgba(255, 132, 0, 0.1);
+    --Col_Black             : #2E2E2E;
+    --Col_Gray              : #5E5E5E;
+    
+}
+/* classes background */
+.BCKsec         {   background-color: var(--Col_Secondary);     }
+.BCKsecDark     {   background-color: var(--Col_SecondaryDark); }
+.BCKgrayLight   {   background-color: var(--Col_GrayLight);     }
+.BCKprim        {   background-color: var(--Col_Primary);       }
+.BCKprimAlpha   {   background-color: var(--Col_PrimaryAlpha);  }
+.BCKgrad {background-image: linear-gradient(-45deg,#1C4689,#09234B);}
+
+/* classes text */
+.TXTblack       {   color: var(--Col_Black);    }
+.TXTgray        {   color: var(--Col_Gray);     }
+.TXTprim        {   color: var(--Col_Primary);  }
+.TXTwhite       {   color:white;              }
+
+/*CONTAINERS<<____________________________________________________________________________________*/
+.container{margin: 0 18vw; max-width: 1230px;}
+/*CONTAINERS>>____________________________________________________________________________________*/
+
+/*FLEX<<____________________________________________________________________________________*/
+.flexSideSide{display: flex; justify-content: space-between; align-items: center;}
+.flexAround{display: flex; justify-content: space-around; align-items: center;}
+.flex{display: flex; align-items: center;}
+.flexCenter{display: flex;justify-content: center}
+.flexRow{display: flex;justify-content: space-between}
+.flexCol{display: flex;flex-direction: column; justify-content: space-between;align-items: center;}
+/*FLEX>>____________________________________________________________________________________*/
+
+/* generic */
+html{font-size: 16px;}
+body{
+    margin:             0px;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    font-family:        'Rubik', sans-serif;
+    font-size:          1rem;
+    color:              white;
+    font-weight:        normal;
+    min-height:         100vh;
+    background-color:   black;
+}
+a   {text-decoration    : none; color: white;   }
+ul  {padding-left       : 0px;                    }
+li  {list-style         : none;                   }
+
+
+#logo{
+    background-image    :   url("img/Logo.svg");
+    width:78px; height  :   26px;
+    background-repeat   :   no-repeat;
+    background-size     :   contain;
+}
