@@ -72,6 +72,8 @@
 .BCKprimAlpha   {   background-color: var(--Col_PrimaryAlpha);  }
 .BCKgrad {background-image: linear-gradient(-45deg,#1C4689,#09234B);}
 
+.shadow     {   box-shadow: 0px 7px 27px rgba(0, 0, 0, 0.1);    }
+
 /* classes text */
 .TXTblack       {   color: var(--Col_Black);    }
 .TXTgray        {   color: var(--Col_Gray);     }
@@ -84,6 +86,7 @@
 
 /*FLEX<<____________________________________________________________________________________*/
 .flexSideSide{display: flex; justify-content: space-between; align-items: center;}
+.flexSideSideUp{display: flex; justify-content: space-between; flex-wrap: wrap;}
 .flexAround{display: flex; justify-content: space-around; align-items: center;}
 .flex{display: flex; align-items: center;}
 .flexCenter{display: flex;justify-content: center}
@@ -103,16 +106,22 @@ body{
     color:              white;
     font-weight:        normal;
     min-height:         100vh;
-    background-color:   black;
 }
 a   {text-decoration    : none; color: white;   }
 ul  {padding-left       : 0px;                    }
 li  {list-style         : none;                   }
 
 
+/*Navbar <<____________________________________________________________________________________*/
+#navBar{height: 113px;}
 #logo{
     background-image    :   url("img/Logo.svg");
     width:78px; height  :   26px;
     background-repeat   :   no-repeat;
     background-size     :   contain;
+    flex: 0 20%
 }
+menu{flex: 0 80%; max-width: 610px;}
+menu li{padding-bottom: 4px; list-style: none;}
+menu li a:hover{color: var(--Col_Primary);}
+/*NAvbar >>____________________________________________________________________________________*/
