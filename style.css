@@ -61,7 +61,7 @@
     --Col_Black             : #2E2E2E;
     --Col_Gray              : #5E5E5E;
     --Shadow_Or             :0px 14px 21px rgba(255, 132, 0, 0.22);
-    --Shadow_Hover          :7px 0px 27px rgba(0, 0, 0, 0.1);
+    --Shadow_Hover          :7px 0px 27px rgba(0, 0, 0, 0.15);
 
 }
 /* classes background */
@@ -193,6 +193,25 @@ h1{margin-bottom: 10px;}
 @media (max-width: 991.98px) {
     .container{  margin: 0px 3vw;   }
     .block{flex: 0 41%; align-items: center;}
+
+    .block{
+        box-shadow: var(--Shadow_Hover);
+    }
+    .icone{
+        background-color: var(--Col_Primary);
+        box-shadow: var(--Shadow_Hover);
+    }
+    .block:hover>.icone{
+        box-shadow: var(--Shadow_Hover);
+    }
+    .icone1{background-image: url(img/icon1.png);}
+    .icone2{background-image: url(img/icon2.png);}
+    .icone3{background-image: url(img/icon3.png);}
+    .icone4{background-image: url(img/icon4.png);}
+    .icone5{background-image: url(img/icon5.png);}
+    .icone6{background-image: url(img/icon6.png);}
+
+    menu li a:hover{color: white;}
 }
 
 /* S _________________________________________________________________________________*/
