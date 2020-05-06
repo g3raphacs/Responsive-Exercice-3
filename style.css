@@ -117,6 +117,7 @@ color: var(--Col_Black);
     background-repeat   :   no-repeat;
     background-size     :   contain;
     display: none;
+    margin-bottom: 40px;
 }
 menu{flex: 0 80%; max-width: 610px;}
 menu li{padding-bottom: 4px; list-style: none;}
@@ -184,24 +185,23 @@ h1{margin-bottom: 10px;}
 
 /* L _________________________________________________________________________________*/
 @media (max-width: 1199.98px) {
-
     .container{  margin: 0px 5vw;   }
 
 }
 
 /* M _________________________________________________________________________________*/
 @media (max-width: 991.98px) {
-
     .container{  margin: 0px 3vw;   }
     .block{flex: 0 41%;}
 }
 
 /* S _________________________________________________________________________________*/
 @media (max-width: 767.98px) {
-
     .container{  margin: 0px 2vw;   }
     .block{flex: 0 36%;}
-    
+    #logo{display: none;}
+    #logoLarge{display: block;}
+    menu{flex:0 100%; padding-left: 0px;}
 }
 
 /* XS _________________________________________________________________________________*/
