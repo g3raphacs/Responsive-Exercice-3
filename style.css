@@ -63,7 +63,7 @@
     --Col_Black             : #2E2E2E;
     --Col_Gray              : #5E5E5E;
     --Shadow_Or             :0px 14px 21px rgba(255, 132, 0, 0.22);
-    --Shadow_Hover          :7px 0px 27px rgba(0, 0, 0, 0.20);
+    --Shadow_Hover          :7px 0px 27px rgba(0, 0, 0, 0.1);
 
 }
 /* classes background */
@@ -73,8 +73,6 @@
 .BCKprim        {   background-color: var(--Col_Primary);       }
 .BCKprimAlpha   {   background-color: var(--Col_PrimaryAlpha);  }
 .BCKgrad {background-image: linear-gradient(-45deg,#1C4689,#09234B);}
-
-.shadow     {   box-shadow: 0px 7px 27px rgba(0, 0, 0, 0.1);    }
 
 /* classes text */
 .TXTgray        {   color: var(--Col_Gray);     }
@@ -87,21 +85,13 @@
 
 /*FLEX<<____________________________________________________________________________________*/
 .flexSideSide{display: flex; justify-content: space-between; align-items: center;}
-.flexSideSideUp{display: flex; justify-content: space-between; flex-wrap: wrap;}
-.flexAround{display: flex; justify-content: space-around; align-items: center;}
-.flex{display: flex; align-items: center;}
-.flexCenter{display: flex;justify-content: center}
-.flexRow{display: flex;justify-content: space-between}
-.flexCol{display: flex;flex-direction: column; justify-content: space-between;align-items: center;}
+
 /*FLEX>>____________________________________________________________________________________*/
 
 /* generic */
 html{font-size: 16px;}
 body{
     margin:             0px;
-    display:            flex;
-    flex-direction:     column;
-    justify-content:    center;
     font-family:        'Rubik', sans-serif;
     font-size:          1rem;
     color:              white;
@@ -130,6 +120,26 @@ menu{flex: 0 80%; max-width: 610px;}
 menu li{padding-bottom: 4px; list-style: none;}
 menu li a:hover{color: var(--Col_Primary);}
 /*NAvbar >>____________________________________________________________________________________*/
+
+/* MAIN_______________________________________________________________________________________ */
+.blockbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 0 29%;
+    margin: 15px 0px;
+}
+
+.block:hover{
+    box-shadow: var(--Shadow_Hover);
+}
+/* Icones  */
 .icone{
     width:  70px;
     height: 70px;
@@ -137,9 +147,6 @@ menu li a:hover{color: var(--Col_Primary);}
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    
-}
-.block:hover{
     box-shadow: var(--Shadow_Hover);
 }
 .block:hover>.icone{
