@@ -62,7 +62,9 @@
     --Col_PrimaryAlpha      : rgba(255, 132, 0, 0.1);
     --Col_Black             : #2E2E2E;
     --Col_Gray              : #5E5E5E;
-    
+    --Shadow_Or             :0px 14px 21px rgba(255, 132, 0, 0.22);
+    --Shadow_Hover          :7px 0px 27px rgba(0, 0, 0, 0.20);
+
 }
 /* classes background */
 .BCKsec         {   background-color: var(--Col_Secondary);     }
@@ -75,7 +77,6 @@
 .shadow     {   box-shadow: 0px 7px 27px rgba(0, 0, 0, 0.1);    }
 
 /* classes text */
-.TXTblack       {   color: var(--Col_Black);    }
 .TXTgray        {   color: var(--Col_Gray);     }
 .TXTprim        {   color: var(--Col_Primary);  }
 .TXTwhite       {   color:white;              }
@@ -106,11 +107,15 @@ body{
     color:              white;
     font-weight:        normal;
     min-height:         100vh;
+    background-color: #FCFCFC;
 }
 a   {text-decoration    : none; color: white;   }
 ul  {padding-left       : 0px;                    }
 li  {list-style         : none;                   }
-
+h1,h2{
+font-weight: 500;
+color: var(--Col_Black);
+}
 
 /*Navbar <<____________________________________________________________________________________*/
 #navBar{height: 113px;}
@@ -119,9 +124,37 @@ li  {list-style         : none;                   }
     width:78px; height  :   26px;
     background-repeat   :   no-repeat;
     background-size     :   contain;
-    flex: 0 20%
+    flex: 0 20%;
 }
 menu{flex: 0 80%; max-width: 610px;}
 menu li{padding-bottom: 4px; list-style: none;}
 menu li a:hover{color: var(--Col_Primary);}
 /*NAvbar >>____________________________________________________________________________________*/
+.icone{
+    width:  70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.block:hover{
+    box-shadow: var(--Shadow_Hover);
+}
+.block:hover>.icone{
+    background-color: var(--Col_Primary);
+    box-shadow: var(--Shadow_Or);
+}
+.icone1{background-image: url(img/iconOr1.png);}
+.block:hover>.icone1{background-image: url(img/icon1.png);}
+.icone2{background-image: url(img/iconOr2.png);}
+.block:hover>.icone2{background-image: url(img/icon2.png);}
+.icone3{background-image: url(img/iconOr3.png);}
+.block:hover>.icone3{background-image: url(img/icon3.png);}
+.icone4{background-image: url(img/iconOr4.png);}
+.block:hover>.icone4{background-image: url(img/icon4.png);}
+.icone5{background-image: url(img/iconOr5.png);}
+.block:hover>.icone5{background-image: url(img/icon5.png);}
+.icone6{background-image: url(img/iconOr6.png);}
+.block:hover>.icone6{background-image: url(img/icon6.png);}
