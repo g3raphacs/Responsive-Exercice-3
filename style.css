@@ -181,7 +181,7 @@ h1{margin-bottom: 10px;}
 /* RESPONSIVE_________________________________________________________________________*/
 
 /* XL ________________________________________________________________________________*/
-.container{margin: 0 auto; max-width: 1230px;}
+.container{margin: 0 auto; max-width: 1180px;}
 
 /* L _________________________________________________________________________________*/
 @media (max-width: 1199.98px) {
@@ -192,7 +192,7 @@ h1{margin-bottom: 10px;}
 /* M _________________________________________________________________________________*/
 @media (max-width: 991.98px) {
     .container{  margin: 0px 3vw;   }
-    .block{flex: 0 41%;}
+    .block{flex: 0 41%; align-items: center;}
 }
 
 /* S _________________________________________________________________________________*/
@@ -201,10 +201,22 @@ h1{margin-bottom: 10px;}
     .block{flex: 0 36%;}
     #logo{display: none;}
     #logoLarge{display: block;}
-    menu{flex:0 100%; padding-left: 0px;}
+    #navBar{justify-content: center;min-height: 200px;padding:0px 20px;}
+    menu{flex:0 100%; padding-left: 0px; flex-wrap: wrap;}
+    menu li a{ display:block; width: 100%; padding:14px 0px;}
+    menu li{
+        flex: 0 25%;
+        min-width: 30%;
+        min-height:45px;
+        background-color: rgba(0, 0, 0, 0.315);
+        border-radius: 10px;
+        margin:10px 0px;
+    }
+    menu li:last-child{display: none;}
 }
 
 /* XS _________________________________________________________________________________*/
 @media (max-width: 575.98px) {
     .block{flex: 0 100%;}
+
 }
