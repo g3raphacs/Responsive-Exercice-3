@@ -232,6 +232,10 @@ h1{margin-bottom: 10px;}
         margin:10px 0px;
     }
     menu li:last-child{display: none;}
+    #mainHeader{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 /* XS _________________________________________________________________________________*/
